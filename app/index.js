@@ -13,7 +13,7 @@ const fs = require('fs');
       '--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'
     ]
     });
-    const articlePlayList =  yaml.safeLoad(fs.readFileSync('playlist.yaml'));    
+    const articlePlayList =  yaml.safeLoad(fs.readFileSync('./playlist.yaml'));    
 
     for (var idx in articlePlayList.playlist) {
       const page = await browser.newPage();
